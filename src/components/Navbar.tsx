@@ -1,14 +1,29 @@
 import ComponentWhatsApp from "./ComponentWhatsApp"
-import { BiLogoInstagramAlt } from "react-icons/bi"
+import Modal from "./Modal"
 
 import imagen from "../assets/images/ubicacion.png"
+import { useState } from "react";
+import { AiOutlineClose } from "react-icons/ai";
+import { HiMenuAlt1 } from "react-icons/hi";
+import { BiLogoInstagramAlt } from "react-icons/bi"
 
 
 
 const Navbar = () => {
+
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
+
+  const openMenu = () => {
+    setIsOpenMenu(true)
+  }
+
+  const closeMenu = () => {
+    setIsOpenMenu(false)
+  }
+
   return (
     <>
-      <div className="bg-sky-900 w-screen flex items-center justify-between p-5 lg:flex-row drop-shadow-xl">
+      <div className="bg-sky-900 flex items-center justify-between p-5 lg:flex-row drop-shadow-xl">
         <div className="flex flex-row items-center justify-between gap-10">
           <div className="rounded-xl">
             <a href="/">
@@ -38,9 +53,43 @@ const Navbar = () => {
               <ComponentWhatsApp />
             </a>
           </div>
+
+          <div className="block lg:hidden">
+            {
+              isOpenMenu ? (
+                <AiOutlineClose onClick={closeMenu} size={30} className="text-slate-300" />
+              ) : (
+                <HiMenuAlt1 onClick={openMenu} size={30} className="text-slate-300" />
+              )
+            }
+          </div>
         </div>
       </div >
+
+      <div className="flex justify-end lh:hidden">
+        {
+          isOpenMenu ? (
+            <div className="bg-sky-800 flex flex-col items-end w-full py-5 px-10 z-10">
+              <ul>
+                <li className="text-slate-300 text-2xl mb-2 cursor-pointer">
+                  <Modal />
+                </li>
+                <li className="text-slate-300 text-2xl mb-2 cursor-pointer">
+                  <a href="https://www.instagram.com/estudiojuridicoperetto/" target="_blank">
+                    <BiLogoInstagramAlt size={70} className="text-slate-300 flex" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          ) : (
+            <div></div>
+          )
+        }
+      </div>
+
+
     </>
+
   )
 }
 
