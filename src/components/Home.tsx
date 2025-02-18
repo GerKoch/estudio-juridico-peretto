@@ -1,61 +1,19 @@
-import service1 from "../assets/images/services/servicio1.png"
-import service2 from "../assets/images/services/servicio2.png"
-import service3 from "../assets/images/services/servicio3.png"
-import service4 from "../assets/images/services/servicio4.png"
-import office from "../assets/images/Office3.png"
-import whattsapp from "../assets/images/whattsapp2.png"
 
 
 const Home = () => {
   return (
-    <div className="bg-sky-700 flex flex-grow items-center justify-center">
-      <div className="">
-        <div className="flex flex-row items-center justify-center">
-          <div>
-            <img
-              src={office}
-              alt="Estudio"
-              className="object-contain lg:w-[720px] rounded-r-full"
-            />
-          </div>
-          <div>
-            <img
-              src={whattsapp}
-              alt="Estudio"
-              className="object-contain lg:w-[820px] rounded-l-full"
-            />
-          </div>
-        </div>
+    <section className="flex justify-baseline items-center p-5 py-28 flex-col relative h-sc lg:flex lg:items-end">
 
-        <div className="bg-sky-700 grid w-full h-full place-items-center grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 p-6">
-          <div className="relative rounded-xl">
-            <img
-              src={service1}
-              alt="Estudio Jurídico"
-              className="object-contain rounded-4xl w-44 lg:w-96" />
-          </div>
-          <div className="relative rounded-xl">
-            <img
-              src={service2}
-              alt="Estudio Jurídico"
-              className="object-contain rounded-4xl  w-44 lg:w-96" />
-          </div>
-          <div className="relative rounded-xl">
-            <img
-              src={service3}
-              alt="Estudio Jurídico"
-              className="object-contain rounded-4xl  w-44 lg:w-96" />
-          </div>
-          <div className="relative rounded-xl">
-            <img
-              src={service4}
-              alt="Estudio Jurídico"
-              className="object-contain rounded-4xl  w-44 lg:w-96" />
-          </div>
-        </div>
 
+      <div className="absolute backdrop-blur-xs top-0 left-0 w-full h-full lg:backdrop-blur-none" />
+
+      <div className="absolute flex flex-col px-4 pt-7 pb-24 gap-4 lg:w-full w-fit lg:flex lg:items-start lg:p-20">
+        <h1 className="flex lg:justify-around text-center text-black lg:text-6xl text-5xl">Estudio Jurídico Peretto y Asoc.</h1>
+        <p className="flex lg:justify-around text-center text-2xl mt-0 text-slate-900 lg:text-3xl">ART, LABORAL, FAMILIA, SUCESIONES, REAJUSTE DE HABERES</p>
+        <p className="flex lg:justify-around text-center text-2xl mt-0 text-slate-900 lg:text-3xl">Atendemos consultas desde cualquier punto del país</p>
+        <p className="flex lg:justify-around text-center justify-center text-xl mb-2 text-green-900 font-semibold">Agenda tu consulta por WhatsApp</p>
       </div>
-    </div>
+    </section>
   )
 }
 

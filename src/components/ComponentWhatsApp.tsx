@@ -6,7 +6,7 @@ const ComponentWhatsApp = () => {
   return (
     <div>
       <a href="https://wa.me/5493364339538?text=Hola quiero hacerte una consulta" target="_blank">
-        <IoLogoWhatsapp size={70} className=" text-green-500 hover:text-green-700" />
+        <IoLogoWhatsapp size={70} className="text-green-500 hover:text-green-700 fixed right-[10%] bottom-[15%]" />
       </a>
     </div>
   )

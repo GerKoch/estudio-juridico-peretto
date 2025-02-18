@@ -5,7 +5,7 @@ const Modal = () => {
   return (
     <>
       <button>
-        Sobre mí
+        Sobre nosotros
       </button>
     </>
   )

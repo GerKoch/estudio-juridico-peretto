@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+:root {
+  /* width: 1200px; */
+  background-image: url(assets/images/justice3.png);
+  background-size: cover;
+}
