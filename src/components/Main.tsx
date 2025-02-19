@@ -1,3 +1,4 @@
+// import ComponentWhatsApp from "./ComponentWhatsApp"
 import ComponentWhatsApp from "./ComponentWhatsApp"
 import Footer from "./footer"
 import Home from "./Home"
@@ -12,7 +13,7 @@ const Main = () => {
         <Home />
       </div>
       <div className="">
-        <ComponentWhatsApp />
+        {/* <ComponentWhatsApp /> */}
         <Footer />
       </div>
     </div>
