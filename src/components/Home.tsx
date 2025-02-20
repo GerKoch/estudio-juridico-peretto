@@ -6,7 +6,7 @@ const Home = () => {
     <section className="flex justify-center items-center py-28 flex-col lg:flex-row lg:items-end">
       <div className="relative w-screen">
 
-        <div className="absolute inset-0 bg-black opacity-70 z-0" />
+        {/* <div className="absolute inset-0 bg-black opacity-70 z-0" /> */}
 
         <div className="relative z-10 flex flex-col text-center justify-center gap-4 lg:flex lg:py-20 ">
           <h1 className="text-center text-white lg:text-5xl text-5xl font-[roboto_slab] uppercase">Peretto & Asociados</h1>
