@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  background-image: url(assets/images/background-image2.jpg);
+  background-image: url(assets/images/background-image.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,7 +12,7 @@ body {
   position: relative;
 }
 
-body::before {
+/* body::before {
   content: "";
   position: absolute;
   top: 0;
@@ -21,4 +21,4 @@ body::before {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
-}
+} */
