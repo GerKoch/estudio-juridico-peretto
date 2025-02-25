@@ -1,6 +1,6 @@
 import { BiLogoInstagramAlt } from "react-icons/bi"
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center text-slate-100 h-28 lg:gap-40 gap-2 sm:gap-2 px-4 lg:px-20 bg-black opacity-80">
       <p className="text-center text-sm lg:text-base">
@@ -10,6 +10,7 @@ const Footer = () => {
         <a
           href="https://www.instagram.com/estudiojuridicoperetto/"
           target="_blank"
+          rel="noopener noreferrer"
           className="hover:text-slate-200 transition-all duration-300"
         >
           <BiLogoInstagramAlt
